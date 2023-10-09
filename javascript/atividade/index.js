@@ -1,4 +1,4 @@
-/**Trabalho Truma FS-22 Digital Colleger - Methods
+/**Trabalho Turma FS-22 Digital Colleger - Methods
  * Objetivo do trabalho e escolher 3 Methdos e explicalos e exemplificalo-los.
  * Methods que não podemos usar:
  *  - Push, pop, shift, unshift, map, foreach e concat.
@@ -21,11 +21,11 @@ const dados = [
  */
 
 // EX:
-// const exFind = dados.find((salary) => {
-//     return salary.salario >= 8000;
-// })
+const exFind = dados.find((salary) => {
+    return salary.salario >= 8000;
+})
 // Imprmindo o resultado. No caso ele vai percorrer o ARRAY e Trazer APENAS o PIRMEIRO iten que está dentro da Condicao >=8000
-// console.log(exFind); // Neste caso ele me retorna o Alexandre pois ele e o primeiro que atende a condicao >= 8000.
+console.log(exFind); // Neste caso ele me retorna o Alexandre pois ele e o primeiro que atende a condicao >= 8000.
 
 /** 2 Methods e o FILTER.
  *  O Method do Filter ele vai percorer o array de objetos e retornar um array com todos os objetos que atedem a condicao especificada
@@ -33,12 +33,12 @@ const dados = [
  */
 
 //EX:
-// const exFilter = dados.filter((age) => {
-//     return age.idade <= 33 //&& age.salario >=10000;
-// })
+const exFilter = dados.filter((age) => {
+    return age.idade <= 33 //&& age.salario >=10000;
+})
 // Neste caso com foi usar o Filter ele vai olhar todos os itens do Array e traxxer em outro array tudo que atende a condicao.
 // Neste caso ele pode atender a mais de uma condicao como no exemplo
-// console.log(exFilter); // vai traze o samuel, dayane e lucas. sem o "&& age.salario >=10000"
+console.log(exFilter); // vai traze o samuel, dayane e lucas. sem o "&& age.salario >=10000"
 
 /** 3 Methods e o FINDINDEX.
  *  Encontra a posicao de um iten dentro do array
