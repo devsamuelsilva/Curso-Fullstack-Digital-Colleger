@@ -137,15 +137,68 @@ temp.map ((fahre, index) =>{
 // Contagem de Vogais:
 // Escreva uma função que recebe um array de palavras e retorna um novo array com a contagem de vogais em cada palavra.
 
-    const palavras = ["Samuel", "Simily", "Luiz", "Uenia"];
-    const vogais = ["a", "e", "i", "o", "u"];
+    // const palavras = ["Samuel", "Simily", "Luiz", "Uenia"];
+    // const vogais = ["a", "e", "i", "o", "u"];
 
-    function verificarVogais(arr) {
-        const vogaisPalavras = arr.map((letra) => {
-            if ()
-        })
-    }
+    // function verificarVogais(arr) {
+    //     const vogaisPalavras = arr.map((letra) => {
+    //         if ()
+    //     })
+    // }
 
 
 // Remover Elementos Nulos:
 // Escreva uma função que recebe um array que pode conter valores nulos (null) e retorna um novo array sem os valores nulos.
+
+//Filter
+
+// const numeros = [1, 2, 5, 10, 22, 18, 77, 100, 920, 1235];
+
+// const numPares = numeros.filter((number) => number % 2 === 0);
+// console.log(numPares);
+
+const convidado = document.getElementById('convidado');
+const btnSend = document.getElementById('btnSend');
+const list = document.getElementById('list');
+const filter = document.getElementById('filter');
+
+const convidados = [];
+
+function renderList(array) {
+    const result = (list.innerHTML = array.map((convidado) => {
+        return `<li>${convidado}</li>`;
+    })
+    .join(""));
+
+    return result;
+}
+
+function renderConvidados() {
+    convidados.push(convidado.value);
+    renderList(convidados);
+    convidado.value = "";
+}
+
+function renderConvidadosFiltrados() {
+    const convidadosFiltrados = convidados.filter((convidado) => 
+    convidado.toLowerCase().includes(filter.value.toLowerCase())
+    );
+    renderList(convidadosFiltrados);
+}
+
+btnSend.addEventListener("click", renderConvidados);
+
+filter.addEventListener("input", renderConvidadosFiltrados);
+
+
+//PONDO PRA RODAR NO ENTER
+// convidado.addEventListener("keydown", (event) => {
+//     if (event.key === "Enter") {
+//         const item = document.createElement('li');
+//         item.innerText = convidado.value;
+//         list.appendChild(item);
+//         convidados.push(convidado.value);
+//         console.log(convidados);
+//         convidado.value = "";
+//     }
+// })
