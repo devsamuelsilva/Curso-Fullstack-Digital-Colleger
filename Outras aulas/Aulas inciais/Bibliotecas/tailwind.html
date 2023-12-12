@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind DEMO</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+</head>
+
+<body>
+    <nav class="w-full h-20 px-8 border-b-2 border-[#d9dbe0]">
+        <div class="w-full h-full flex justify-between items-center">
+            <img src="https://static.tildacdn.com/tild3130-6332-4064-b365-333031663538/logo.svg" alt="">
+            <div class="flex sm:hidden">
+                <box-icon name='menu'></box-icon>
+            </div>
+            <div class="hidden sm:flex gap-10 text-lg ">
+                <a class="hover:text-[#0053ff] font" href="">Favorite projects</a>
+                <a class="hover:text-[#0053ff] font" href="">Reviews</a>
+                <a class="hover:text-[#0053ff] font" href="">Contact</a>
+                <a class="hover:text-[#0053ff] font" href="">Our rates</a>
+            </div>
+        </div>
+    </nav>
+    <section class="flex w-full h-full pb-8 px-8 border-b-2 border-[#d9dbe0] flex-col items-baseline gap-5 sm:flex-col lg:flex-row">
+        <div>
+            <h1 class=" flex text-3xl ">Key features</h1>
+        </div>
+        <div class="sm:flex items-center">
+            <div class="flex  items-center gap-8 sm:flex-col min-h-23 max-w-96 sm:items-start sm:justify-center">
+                <img class="" src="https://static.tildacdn.com/tild3236-3339-4231-b161-366365366237/ill-e-1.svg" alt="">
+                <div class="flex flex-col gap-5">
+                    <h2 class="">PERSONAL MANAGER</h2>
+                    <p class="">Available in the Pacific Time Zone working hours</p>
+                </div>
+            </div>
+            <div class="flex justify-center items-center gap-8 sm:flex-col sm:items-start sm:justify-center">
+                <img class="" src="https://static.tildacdn.com/tild6138-3037-4361-b039-323039383662/ill-e-2.svg" alt="">
+                <div class="flex flex-col gap-5">
+                    <h2 class="">CLEAR BUDGET</h2>
+                    <p class="">We provide detailed estimates. You agree to everything before we start</p>
+                </div>
+            </div>
+            <div class="flex justify-center items-center gap-8 sm:flex-col sm:items-start sm:justify-center">
+                <img class="" src="https://static.tildacdn.com/tild6366-6135-4966-b635-336633336561/ill-e-3.svg" alt="">
+                <div class="flex flex-col gap-5">
+                    <h2 class="">REALTIME DASHBOARD</h2>
+                    <p class="">Integrated dashboard providing full control over the development process</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

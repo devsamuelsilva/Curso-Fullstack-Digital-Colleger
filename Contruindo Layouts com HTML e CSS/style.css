@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#cabecalho {
+    width: 100%;
+    min-height: 100px;
+    background-color: #00bbd3;
+}
+
+.container {
+    width: 90%;
+    height: 80%;
+    margin: 0px auto;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo {
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+#logo span {
+    font-size: 4em;
+}
+
+#logo h5 {
+    font-size: 2em;
+}
+
+/*Menu*/
+
+#menu nav ul {
+    display: flex;
+    gap: 10px;
+}
+
+#menu nav ul li {
+    list-style: none;
+}
+
+#menu li a {
+    text-decoration: none;
+    color: white;
+  
+}
+
+.btn-orange {
+    background-color: orangered;
+    color: white;
+    padding: 10px;
+    border: 0;
+    border-radius: 5px;
+    text-decoration: none;
+    /*muda o atributo informado no tempo determinado*/
+    transition: background 500ms, font 500ms;
+}
+
+.btn-orange:hover {
+    background-color: blue;
+    font-weight: bold;
+}
+
+#banner {
+    height: 500px;
+    display: flex; 
+    width: 90%;
+    margin: 0 auto; 
+    align-items: center;
+}
+
+.text-orange {
+    color: orangered;
+}
+
+.text-blue {
+    color: rgb(4, 4, 75);
+}
+
+.col-50 {
+    width: 50%;
+}
+
+#cartoes {
+    height: 200px;
+    background-color: #e7e7e7;
+
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.col-25 {
+    width: 25%;
+    padding: 10px;
+}

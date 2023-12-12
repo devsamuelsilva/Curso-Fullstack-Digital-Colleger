@@ -1,0 +1,20 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.inputCep {
+    outline: none;
+    padding: 4px 6px;
+    border: 1px solid black;
+    border-radius: 4px;
+}
+
+.btn {
+    border: none;
+    color: white;
+    background-color: blue;
+    padding: 6px 8px;
+    border-radius: 4px;
+    cursor: pointer;
+}

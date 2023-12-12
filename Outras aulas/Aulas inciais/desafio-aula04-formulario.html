@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio Aula 04</title>
+</head>
+
+<body>
+    <h2>Cadastre-se</h2>
+    <span>É rápido e fácil</span>
+    <form>
+        <input placeholder="Nome" type="text" name="nome" id="nome"><!--Option+ seta = movimenta a linha toda pra cima ou pra baixo.-->
+        <input placeholder="Sobrenome" type="text" name="sobrenome" id="sobrenome">
+        <br>
+        <input placeholder="Email" size="42" type="email" name="user-email" id="user-email">
+        <br>
+        <input placeholder="Nova Senha" size="42" type="password" name="user-password" id="user-password">
+        <br>
+        <label for="">Data de Nascimento</label>
+        <br>
+        <select name="birthday-day" id="day" title="Dia"><!--Shift+Option + seta pra baixo ou cima copiar a linha-->
+            <option value="">1</option><!--Command+Option+seta pra cima ou pra baixo editar varias linhas -->
+            <option value="">2</option>
+            <option value="">3</option>
+            <option value="">4</option>
+            <option value="">5</option>
+            <option value="">6</option>
+            <option value="">7</option>
+        </select>
+        <select name="birthday-month" id="month" title="Mês">
+            <option value="">Janeiro</option>
+            <option value="">Fevereiro</option>
+            <option value="">Março</option>
+            <option value="">Abril</option>
+        </select>
+        <select name="birthday-year" id="year" title="Ano">
+            <option value="">2021</option>
+            <option value="">2022</option>
+            <option value="">2023</option>
+            <option value="">2024</option>
+            <option value="">2025</option>
+            <option value="">2026</option>
+            <option value="">2027</option>
+        </select>
+    </form>
+    <br>
+    <label for="">Genero</label>
+    <br>
+    <input type="radio" name="sexo" id="masculino">
+    <label for="masculino">Masculino</label>
+    <input type="radio" name="sexo" id="feminino">
+    <label for="feminino">Feminino</label>
+    <input type="radio" name="sexo" id="personalizado">
+    <label for="personalizado">Personalizado</label>
+    <br>
+    
+    <button>Cadastre-se</button>
+
+
+</body>
+
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form>
+        <div>
+            <input placeholder="Nome" type="text" name="user-name" id="user-name">
+            <input placeholder="Sobrenome" type="text" name="user-last-name" id="user-last-name">
+        </div>
+        <input placeholder="Email" type="email" name="user-email" id="user-email">
+        <input placeholder="Nova Senha" type="password" name="user-password" id="user-password">
+        <div>
+            <p>Data de Nascimento</p>
+            <select name="birthday-day" id="birthday-day">
+                <Option value="1">1</Option>
+                <Option value="2">2</Option>
+                <Option value="3">3</Option>
+            </select>
+            <select name="birthday-month" id="birthday-month">
+                <option value="janeiro">Janeiro</option>
+                <option value="fevereiro">Fevereiro</option>
+                <option value="marco">Março</option>
+            </select>
+            <select name="birthday-year" id="birthday-year">
+                <option value="2020" disabled>2020</option>
+                <option value="2021" selected>2021</option>
+                <option value="2022">2022</option>
+            </select>
+        </div>
+        <div>
+            <p>Genero</p>
+            <label for="masculino">
+                Masculino
+                <input type="radio" name="sexo" id="masculino">
+            </label>
+            <label for="feminino">
+                Feminino
+                <input type="radio" name="sexo" id="feminino">
+            </label>
+            <label for="personalizado">
+                Personalizado
+                <input type="radio" name="sexo" id="personalizado">
+            </label>
+        </div>
+        <p>
+            As pessoas que usam nosso serviço podem ter enviado suas informações de contato para o Facebook. <a href="https://www.facebook.com/help/637205020878504">Saiba Mais</a>
+        </p>
+        <p>
+            Ao clicar em Cadastre-se, você concorda com nossos 
+            <a href="https://www.facebook.com/legal/terms/update">Termos,</a> 
+            <a href="https://www.facebook.com/privacy/policy/?entry_point=data_policy_redirect&entry=0">Política de Privacidade</a> e 
+            <a href="https://www.facebook.com/privacy/policies/cookies/?entry_point=cookie_policy_redirect&entry=0">
+            Política de Cookies</a>. Você poderá receber notificações por SMS e cancelar isso quando quiser.
+        </p>
+        <button type="submit">Cadastre-se</button>
+    </form>
+</body>
+
+</html>
